@@ -1,0 +1,94 @@
+body {
+  background: #17191c;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+h1,
+h2 {
+  font-weight: 700;
+}
+h2 {
+  margin-bottom: 20px;
+}
+p {
+  color: #d1d1d1;
+}
+.navbar-brand span,
+.hero span {
+  color: #ed3949;
+}
+.nav-link {
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #ff5260 !important;
+}
+.hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, #090909eb, #111a),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1400")
+      center/cover;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.card,
+.panel {
+  background: #24272b;
+  color: white;
+  border: 1px solid #393b3f;
+  border-radius: 12px;
+}
+.card {
+  overflow: hidden;
+  transition: transform 0.25s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-img-top {
+  height: 215px;
+  object-fit: cover;
+}
+.gallery-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+.gallery-image:hover {
+  transform: scale(1.02);
+}
+.btn {
+  transition: transform 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.form-control {
+  background: #fff;
+}
+footer {
+  border-top: 1px solid #333;
+}
+footer p {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: 330px;
+  }
+  .gallery-image {
+    height: 210px;
+  }
+  .card-img-top {
+    height: 190px;
+  }
+}
